@@ -14,4 +14,4 @@ jobs:
       az-resource-group-name: ${{ github.event.client_payload.az-resource-group }}
       az-web-app-name: ${{ github.event.client_payload.az-web-app }}
       jira-project-id: ${{ github.event.client_payload.jira-project-id }}
-      jira-issue: ${{ github.event.client_payload.jira-issue-id }}
+      jira-issue: KAN
