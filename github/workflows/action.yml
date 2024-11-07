@@ -9,9 +9,10 @@ jobs:
     uses: gianfra901/demosanddonnuts2024/.github/workflows/certificate.yml@main
     secrets: inherit
     with:
+      jira-issue: ${{ github.event.client_payload.jira-issue-id }}
       hv-namespace: ${{ github.event.client_payload.hv-namespace }}
       hv-certificate-path: ${{ github.event.client_payload.hv-certificate-path }}
       az-resource-group-name: ${{ github.event.client_payload.az-resource-group }}
       az-web-app-name: ${{ github.event.client_payload.az-web-app }}
-      jira-project-id: ${{ github.event.client_payload.jira-project-id }}
-      jira-issue: KAN
+      jira-project-id: KAN
+      
