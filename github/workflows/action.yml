@@ -14,5 +14,5 @@ jobs:
       hv-certificate-path: ${{ github.event.client_payload.hv-certificate-path }}
       az-resource-group-name: ${{ github.event.client_payload.az-resource-group }}
       az-web-app-name: ${{ github.event.client_payload.az-web-app }}
-      jira-project-id: KAN
+      jira-project-id: ${{ github.event.client_payload.jira-project-id }}
       
